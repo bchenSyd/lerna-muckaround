@@ -1,15 +1,15 @@
 {
   "name": "gel-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "prepare":"node ../../utils/compile -c button",
+    "prepare": "node ../../utils/compile -c button",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gel-themes": "^1.0.0"
+    "gel-themes": "^1.0.1"
   }
 }
