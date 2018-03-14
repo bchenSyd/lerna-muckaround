@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "clean":"lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
+    "build":"lerna bootstrap --hoist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "lerna": "^2.9.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "lerna": "^2.9.0",
+    "yargs": "^11.0.0"
   }
 }
