@@ -1,5 +1,6 @@
 const getTheme = ()=> ({
-    primaryColor:'red'
+    primaryColor:'red',
+    fontSize:10,
 });
 
 export default getTheme;

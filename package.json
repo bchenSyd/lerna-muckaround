@@ -5,6 +5,7 @@
   "scripts": {
     "clean":"lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
     "build":"lerna bootstrap --hoist",
+    "pusblish":"lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
