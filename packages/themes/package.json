@@ -1,6 +1,6 @@
 {
-  "name": "gel-themes",
-  "version": "1.0.1",
+  "name": "@bchen/gel-themes",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
