@@ -1,5 +1,5 @@
 {
-  "name": "@bchen/gel-button",
+  "name": "@wdpui/gel-button",
   "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bochen/gel-themes": "^1.0.1"
+    "@wdpui/gel-themes": "^1.0.1"
   }
 }
