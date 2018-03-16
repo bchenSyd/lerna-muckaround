@@ -3,6 +3,8 @@ node_js:
  - "8"
 install:
   - npm install
+notifications:
+  email: false
 jobs:
   include:
     - stage: build
