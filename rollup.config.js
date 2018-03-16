@@ -21,7 +21,7 @@ export default {
         babel(),
     ],
     output:{
-        file:'bundle.js',
+        file: `./packages/${component}/${pkg.main}`,
         format:'cjs'
     }
 };

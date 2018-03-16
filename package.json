@@ -4,10 +4,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
-    "build": "lerna bootstrap --hoist",
+    "lerna:bootstrap": "lerna bootstrap --hoist",
     "pusblish": "lerna publish",
     "test": "cd packages/button && npm pack",
-    "rollup:button": "rollup -c --gel-component=button"
+    "build:button": "rollup -c --gel-component=button",
+    "build": "rollup -c --gel-component"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "lerna": "^2.9.0",
@@ -25,6 +27,7 @@
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-svg": "^1.0.1",
     "rollup-plugin-url": "^1.3.0",
+    "style-component": "^0.0.1",
     "yargs": "^11.0.0"
   }
 }

@@ -1,6 +1,8 @@
-const getTheme = ()=> ({
-    primaryColor:'red',
-    fontSize:10,
-});
+const themeProvider = {
+    getTheme: () => {
+        primaryColor: 'red';
+        fontSize: 10;
+    }
+};
 
-export default getTheme;
+export default themeProvider;
