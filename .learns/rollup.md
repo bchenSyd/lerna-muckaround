@@ -1,3 +1,15 @@
+## externals
+(!) Unresolved dependencies
+https://github.com/rollup/rollup/wiki/Troubleshooting#treating-module-as-external-dependency
+react (imported by packages/button/src/index.jsx)
+lodash (imported by packages/button/src/index.jsx)
+
+the import declaration gets turned into a CommonJS require statement, but `react` and `lodash` do **not** get included in the bundle.
+
+if you want to bundle dependencies, you need `rollup-plugin-node-resolve`
+
+
+## babel plugin
 ```js
 {
     "presets": [

@@ -7,7 +7,8 @@
  */
 
 import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from 'rollup-plugin-commonjs'; //  convert CommonJS to ES2015 before Rollup can process them
+
 import url from 'rollup-plugin-url';
 import svg from 'rollup-plugin-svg';
 import { argv } from 'yargs';
