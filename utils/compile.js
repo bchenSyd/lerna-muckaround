@@ -5,10 +5,11 @@ const argv = require('yargs')
 
 let component = argv.component;
 const projectRoot = __dirname + '/../';
-const packagePath = `packages/${component}/`;
 
-const cmd = exec(`yarn babel ${packagePath}/src --out-dir ${packagePath}/dist`,
-    { cwd: `${__dirname}/../` });
+// rollup -c (--config), move configuration into rollup.config.js
+// --source passed here is handled by yargs (custom para)
+const cmd = exec(`yarn rollup -c --gel-component=${component}`,
+    { cwd: projectRoot });
 
 cmd.stdout.pipe(process.stdout);
 cmd.stderr.pipe(process.stderr);

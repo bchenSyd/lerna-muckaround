@@ -3,6 +3,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent",
-  "registry":"http://localhost:4873"
+  "version": "independent"
 }
