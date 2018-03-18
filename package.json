@@ -8,17 +8,20 @@
     "pusblish": "lerna publish",
     "test": "cd packages/button && npm pack",
     "build:button": "rollup -c --gel-component=button",
-    "build": "rollup -c --gel-component"
+    "build": "rollup -c --gel-component",
+    "lint": "eslint packages"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0",
     "lerna": "^2.9.0",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
