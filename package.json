@@ -1,8 +1,8 @@
 {
   "name": "lerna-test-bochen",
-  "version": "0.67.1",
+  "version": "0.68.0",
   "main": "index.js",
-  "files":[
+  "files": [
     "dummy.txt"
   ],
   "scripts": {
@@ -14,7 +14,7 @@
     "build:button": "rollup -c --gel-component=button",
     "build": "rollup -c --gel-component",
     "lint": "eslint packages",
-    "corp-release":"corp-semantic-release -d --branch=* -v "
+    "corp-release": "corp-semantic-release -d --branch=* -v "
   },
   "author": "",
   "license": "ISC",
