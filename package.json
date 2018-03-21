@@ -1,7 +1,10 @@
 {
-  "name": "lerna-test",
+  "name": "lerna-test-bochen",
   "version": "0.67.1",
   "main": "index.js",
+  "files":[
+    "dummy.txt"
+  ],
   "scripts": {
     "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
