@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
     "lerna:bootstrap": "lerna bootstrap --hoist",
     "pusblish": "lerna publish",
