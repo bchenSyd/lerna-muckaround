@@ -3,12 +3,36 @@
 it uses `max(git tag | package.json) ` to work out the old version, combined the changed commits to work the new version, then commit the changes (update package.json) and tag the new commit. 
 
 #### 2.`lerna publish --yes --conventional-commits` uses 
-[conventional-changelog](
-https://github.com/conventional-changelog/conventional-changelog) which is a monorepo comprised of 
+
 [conventional-recommended-bump](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-recommended-bump)
 
 
-* `conventionalRecommendedBump(options, [parserOpts,] callback)`   does not check npm at all
+* `conventionalRecommendedBump(options, [parserOpts,] callback)` relies on `git-semver-tags` to return all local git semver tags
+
+* `git-semver-tags` which is [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
+```json
+  "name": "git-semver-tags",
+  "version": "1.3.4",
+  "description": "Get all git semver tags of your repository in reverse chronological order",
+  "bugs": {
+    "url": "https://github.com/conventional-changelog/conventional-changelog/issues"
+  },
+```
+```js
+//filter out tags
+`git log --decorate --no-color || /tag:\s*(.+?)[,\)]/gi.test()`
+
+//filter out lerna version tags
+function lernaTag(tag, pkg) {
+  if (pkg && !(new RegExp('^' + pkg + '@')).test(tag)) {
+    return false;
+  } else {
+    return /^.+@[0-9]+\.[0-9]+\.[0-9]+(-.+)?$/.test(tag);
+  }
+}
+
+// tag[0] (latest git semver tag) onwards, bump to new ver
+
 
 321ae61 :  chore(themes): a patch-level change on themes
 Changes:
