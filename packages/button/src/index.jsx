@@ -7,7 +7,7 @@ import getName from './utils/getName';
 const { a, ...rest } = { a: 1, b: 2, c: 3 };
 // test styled-component
 const Wrapper = styled.div`
-  height: 300px;
+  height: 200px;
 `;
 // test internal package dependency
 const theme = ThemeProvider.getTheme();
