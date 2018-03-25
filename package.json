@@ -14,7 +14,8 @@
     "test": "cd packages/button && npm pack",
     "build:button": "rollup -c --gel-component=button",
     "build": "rollup -c --gel-component",
-    "lint": "eslint packages"
+    "lint": "eslint packages",
+    "gitSemverTags":"git-semver-tags"
   },
   "author": "",
   "license": "ISC",
