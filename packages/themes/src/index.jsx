@@ -1,7 +1,7 @@
 const themeProvider = {
     getTheme: () => ({
         primaryColor: 'red',
-        fontSize: 10,
+        fontSize: 12,
         backgroundColor:'white'
     })
 };
