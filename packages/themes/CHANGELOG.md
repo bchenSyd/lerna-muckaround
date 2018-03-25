@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.69.1"></a>
+## [0.69.1](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.69.0...@lernatest/gel-themes@0.69.1) (2018-03-25)
+
+
+### Bug Fixes
+
+* **themes:** bugfix ([c1853ad](https://github.com/bochen2014/lerna-muckaround/commit/c1853ad))
+
+
+
+
 <a name="0.69.0"></a>
 # [0.69.0](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.68.0...@lernatest/gel-themes@0.69.0) (2018-03-25)
 
