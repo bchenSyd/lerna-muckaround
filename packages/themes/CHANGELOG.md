@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.69.0"></a>
+# [0.69.0](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.68.0...@lernatest/gel-themes@0.69.0) (2018-03-25)
+
+
+### Features
+
+* update font size ([d99f24f](https://github.com/bochen2014/lerna-muckaround/commit/d99f24f))
+
+
+
+
 <a name="0.68.0"></a>
 # [0.68.0](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.67.3...@lernatest/gel-themes@0.68.0) (2018-03-25)
 
