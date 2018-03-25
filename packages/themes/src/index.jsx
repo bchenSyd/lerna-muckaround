@@ -1,6 +1,6 @@
 const themeProvider = {
     getTheme: () => {
-        primaryColor: 'red';
+        primaryColor: 'blue';
         fontSize: 10;
     }
 };
