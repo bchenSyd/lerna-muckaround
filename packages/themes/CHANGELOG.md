@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.72.1"></a>
+## [0.72.1](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.72.0...@lernatest/gel-themes@0.72.1) (2018-03-25)
+
+
+### Performance Improvements
+
+* **themes:** update themes ([fbc4bdd](https://github.com/bochen2014/lerna-muckaround/commit/fbc4bdd))
+
+
+
+
 <a name="0.72.0"></a>
 # [0.72.0](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.71.1...@lernatest/gel-themes@0.72.0) (2018-03-25)
 
