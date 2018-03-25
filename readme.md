@@ -8,18 +8,16 @@ https://github.com/conventional-changelog/conventional-changelog) which is a mon
 [conventional-recommended-bump](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-recommended-bump)
 
 
-* `conventionalRecommendedBump(options, [parserOpts,] callback)`   
-##### whatBump
+* `conventionalRecommendedBump(options, [parserOpts,] callback)`   does not check npm at all
 
-**Type:** `function`
+321ae61 :  chore(themes): a patch-level change on themes
+Changes:
+ - @lernatest/gel-button: 0.70.0 => 0.70.1  # a patch bump for packages who depends on it
+ - @lernatest/library: 0.68.2 => 0.68.3     # a patch bump for packages who depends on it
+ - @lernatest/gel-themes: 0.71.0 => 0.71.1  # a patch bump for itself
 
-A function that takes parsed commits as an argument.
 
-```javascript
-whatBump(commits) {};
-```
-
-`commits` is an array of all commits from last semver tag to `HEAD` as parsed by [conventional-commits-parser](https://github.com/conventional-changelog/conventional-commits-parser)
-
-This should return an object including but not limited to `level` and `reason`. `level` is a `number` indicating what bump it should be and `reason` is the reason of such release.
-
+3715a55 :  feat(button): a minor-level change for button only
+Changes:
+ - @lernatest/gel-button: 0.70.1 => 0.71.0  # a mino bump for itself
+ - @lernatest/library: 0.68.3 => 0.68.4     # a patch bump for packages who depends on it
