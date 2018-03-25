@@ -15,7 +15,7 @@
     "build:button": "rollup -c --gel-component=button",
     "build": "rollup -c --gel-component",
     "lint": "eslint packages",
-    "gitSemverTags":"git-semver-tags",
+    "gitSemverTags": "git-semver-tags",
     "debug-lerna": "node --inspect-brk node_modules/lerna/bin/lerna.js publish --yes --conventional-commits --skip-git --skip-npm",
     "debug-bump": "lerna publish --yes --conventional-commits --skip-git --skip-npm"
   },
