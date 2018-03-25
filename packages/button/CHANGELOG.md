@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.71.0"></a>
+# [0.71.0](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-button@0.70.1...@lernatest/gel-button@0.71.0) (2018-03-25)
+
+
+### Features
+
+* **button:** a minor-level change for button only ([3715a55](https://github.com/bochen2014/lerna-muckaround/commit/3715a55))
+
+
+
+
 <a name="0.70.1"></a>
 ## [0.70.1](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-button@0.70.0...@lernatest/gel-button@0.70.1) (2018-03-25)
 
