@@ -1,0 +1,16 @@
+{
+  "name": "@lernatest/library",
+  "version": "0.68.0",
+  "description": "  ",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "node ../../utils/compile -c library",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lernatest/gel-themes": "^0.69.2",
+    "@lernatest/gel-button":"^0.68.3"
+  }
+}
