@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/gel-themes",
-  "version": "1.0.5",
+  "version": "0.67.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
