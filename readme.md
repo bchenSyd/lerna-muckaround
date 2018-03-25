@@ -21,3 +21,38 @@ Changes:
 Changes:
  - @lernatest/gel-button: 0.70.1 => 0.71.0  # a mino bump for itself
  - @lernatest/library: 0.68.3 => 0.68.4     # a patch bump for packages who depends on it
+
+
+perf change is treated as a patch change
+```
+ /opt/git/lerna-muckaround (master)$ git add .
+/opt/git/lerna-muckaround (master +)$ git commit -m 'perf(themes): update themes'
+[master fbc4bdd] perf(themes): update themes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+/opt/git/lerna-muckaround (master)$ yarn lerna publish --yes --conventional-commits
+yarn run v1.5.1
+$ /opt/git/lerna-muckaround/node_modules/.bin/lerna publish --yes --conventional-commits
+lerna info version 2.9.0
+lerna info versioning independent
+lerna info Checking for updated packages...
+lerna info Comparing with @lernatest/gel-button@0.71.1.
+lerna info Checking for prereleased packages...
+
+Changes:
+ - @lernatest/gel-button: 0.71.1 => 0.71.2
+ - @lernatest/library: 0.68.5 => 0.68.6
+ - @lernatest/gel-themes: 0.72.0 => 0.72.1
+
+lerna info auto-confirmed
+lerna info publish Publishing packages to npm...
+lerna info published @lernatest/gel-themes
+lerna info published @lernatest/gel-button
+lerna info published @lernatest/library
+lerna info git Pushing tags...
+Successfully published:
+ - @lernatest/gel-button@0.71.2
+ - @lernatest/library@0.68.6
+ - @lernatest/gel-themes@0.72.1
+lerna success publish finished
+Done in 19.96s.
+```
