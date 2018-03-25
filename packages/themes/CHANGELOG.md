@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.69.2"></a>
+## [0.69.2](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.69.1...@lernatest/gel-themes@0.69.2) (2018-03-25)
+
+
+
+
+**Note:** Version bump only for package @lernatest/gel-themes
+
 <a name="0.69.1"></a>
 ## [0.69.1](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.69.0...@lernatest/gel-themes@0.69.1) (2018-03-25)
 
