@@ -140,3 +140,16 @@ lerna sill runScriptSync preversion @wdpui/api-client-new
 lerna sill runScriptSync version @wdpui/api-client-new
 lerna sill updateIndependentChangelog for @wdpui/api-client-new at /opt/lerna-test/packages/api-client
 ```
+
+
+## log.silly("pushWithTags")
+
+```js
+  static pushWithTags(remote, tags, opts) {
+    log.silly("pushWithTags", [remote, tags]);
+
+    const branch = GitUtilities.getCurrentBranch(opts);
+    ChildProcessUtilities.execSync("git", ["push", remote, branch], opts);
+    ChildProcessUtilities.execSync("git", ["push", remote].concat(tags), opts);
+  }
+```
