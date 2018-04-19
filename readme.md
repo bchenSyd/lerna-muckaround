@@ -107,27 +107,18 @@ Done in 19.96s.
 ### nuts and bolts
 
 ```sh
-# git the latest tag
-` git describe --tags`
-with-sso@1.0.1-1-g46a7262
+# foreach package
+# {
+` git diff --name-only $(git describe --tag --abbrev=0)  -- packages/xxx `
 
-` git describe --tags --abbrev=0`
-with-sso@1.0.1
+# if empty, return;
+# otherwise:
+#    node ../../node_modules/conventional-recommended-bump/cli.js -l @wdpui/gel-button --commmit-path packages/gel-button -p angular
 
-# for p in packages/*; do:
-` cd packages/api-client/`
-`git diff --name-only  with-sso@1.0.1  -- $(pwd)   `
-packages/api-client/CHANGELOG.md
+# //******************************************************************************** */
+#       return _semver2.default.inc(pkg.version /**** ALWAYS PACKAGE.JSON VERSION !!! always ****/, recommendedBump);
+# //******************************************************************************** */
 
-#    const RECOMMEND_CLI = require.resolve("conventional-recommended-bump/cli");
-
-#    const args = [RECOMMEND_CLI, "--commit-path", pkg.location, "-p", "angular"];
-#    return ConventionalCommitUtilities.recommendVersion(pkg, opts, "recommendFixedVersion", args);
-`node ../../node_modules/conventional-recommended-bump/cli --commit-path /opt/lerna-test/packages/api-client -p angular`
-patch
-
-# log.verbose(type, "increment %s by %s", pkg.version, recommendedBump);
-lerna verb recommendIndependentVersion increment 1.0.4 by patch
 
 Changes:
  - @wdpui/api-client-new: 1.0.4 => 1.0.5
