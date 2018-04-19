@@ -120,3 +120,25 @@ index 881db40..bf070f9 100644
          var recommendedVersion = recommendVersionFn(pkg, _this5.changelogOpts);
          callback({ pkg, recommendedVersion });
        });
+diff --git a/node_modules/lerna/lib/UpdatedPackagesCollector.js b/node_modules/lerna/lib/UpdatedPackagesCollector.js
+index 9380e58..bae4439 100644
+--- a/node_modules/lerna/lib/UpdatedPackagesCollector.js
++++ b/node_modules/lerna/lib/UpdatedPackagesCollector.js
+@@ -131,11 +131,16 @@ var UpdatedPackagesCollector = function () {
+           if (forced.has(pkg.name)) {
+             return true;
+           }
+-          return _this.hasDiffSinceThatIsntIgnored(pkg, since);
++          return _this.hasDiffSinceThatIsntIgnored(pkg, since);  // return git diff --name-only result; if not changes, return empty
+         }).forEach(registerUpdated);
+       }
+ 
++      //#####################################################
++            // we use ` git diff --name-only $(git describe --tag --abbrev=0)  -- packages/xxx ` 
++            // to get all updated packages
+             return updatedPackages;
++      //#####################################################
++      
+     }
+   }, {
+     key: "isPackageDependentOf",
