@@ -102,3 +102,41 @@ Done in 19.96s.
 * e7ebcc1 - (12 minutes ago) chore(test): update - bochen
 # package starts from `npm init`, so version defaults to '1.0.0'
 ```
+
+
+### nuts and bolts
+
+```sh
+# git the latest tag
+` git describe --tags`
+with-sso@1.0.1-1-g46a7262
+
+` git describe --tags --abbrev=0`
+with-sso@1.0.1
+
+# for p in packages/*; do:
+` cd packages/api-client/`
+`git diff --name-only  with-sso@1.0.1  -- $(pwd)   `
+packages/api-client/CHANGELOG.md
+
+#    const RECOMMEND_CLI = require.resolve("conventional-recommended-bump/cli");
+
+#    const args = [RECOMMEND_CLI, "--commit-path", pkg.location, "-p", "angular"];
+#    return ConventionalCommitUtilities.recommendVersion(pkg, opts, "recommendFixedVersion", args);
+`node ../../node_modules/conventional-recommended-bump/cli --commit-path /opt/lerna-test/packages/api-client -p angular`
+patch
+
+# log.verbose(type, "increment %s by %s", pkg.version, recommendedBump);
+lerna verb recommendIndependentVersion increment 1.0.4 by patch
+
+Changes:
+ - @wdpui/api-client-new: 1.0.4 => 1.0.5
+
+lerna info auto-confirmed 
+lerna sill initialize success
+lerna sill execute attempt
+lerna sill runScriptSync preversion lerna-test
+lerna sill runScriptSync preversion @wdpui/api-client-new
+lerna sill runScriptSync version @wdpui/api-client-new
+lerna sill updateIndependentChangelog for @wdpui/api-client-new at /opt/lerna-test/packages/api-client
+```
