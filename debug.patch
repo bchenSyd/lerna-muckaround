@@ -1,3 +1,6 @@
+diff --git a/debug.patch b/debug.patch
+new file mode 100644
+index 0000000..e69de29
 diff --git a/node_modules/conventional-recommended-bump/cli.js b/node_modules/conventional-recommended-bump/cli.js
 index 8ea20d7..4c41dcf 100755
 --- a/node_modules/conventional-recommended-bump/cli.js
@@ -14,13 +17,14 @@ index 8ea20d7..4c41dcf 100755
    if (err) {
      console.error(err.toString());
 diff --git a/node_modules/lerna/lib/ConventionalCommitUtilities.js b/node_modules/lerna/lib/ConventionalCommitUtilities.js
-index b38c2cf..2af5e82 100644
+index b38c2cf..e1b4118 100644
 --- a/node_modules/lerna/lib/ConventionalCommitUtilities.js
 +++ b/node_modules/lerna/lib/ConventionalCommitUtilities.js
-@@ -71,6 +71,14 @@ var ConventionalCommitUtilities = function () {
+@@ -71,10 +71,33 @@ var ConventionalCommitUtilities = function () {
      value: function recommendVersion(pkg, opts, type, args) {
        _npmlog2.default.silly(type, "for %s at %s", pkg.name, pkg.location);
  
+-      var recommendedBump = _ChildProcessUtilities2.default.execSync(process.execPath, args, opts);
 +      debugger;
 +      // bochen :  here it start a new node process and wait for it to finish
 +      //           node doesn't allow attach 2 debugger ( at the same time, port 9229 already taken ), so to debugger
@@ -29,18 +33,39 @@ index b38c2cf..2af5e82 100644
 +        args.unshift('--inspect-brk')
 +        console.log(JSON.stringify(args) + '    -- options    ' + JSON.stringify(opts))
 +      }
-       var recommendedBump = _ChildProcessUtilities2.default.execSync(process.execPath, args, opts);
++
++      
++
++      // node ../../node_modules/conventional-recommended-bump/cli.js -l @wdpui/gel-button --commmit-path packages/gel-button -p angular
++      var recommendedBump = _ChildProcessUtilities2.default.execSync(process.execPath, args, opts);  // return 'major', 'minor', or 'patch'
++
++
++
  
        _npmlog2.default.verbose(type, "increment %s by %s", pkg.version, recommendedBump);
+-      return _semver2.default.inc(pkg.version, recommendedBump);
++
++
++
++
++
++      //******************************************************************************** */
++      return _semver2.default.inc(pkg.version /**** ALWAYS PACKAGE.JSON VERSION !!! always ****/, recommendedBump);
++      //******************************************************************************** */
++      
+     }
+   }, {
+     key: "updateIndependentChangelog",
 diff --git a/node_modules/lerna/lib/GitUtilities.js b/node_modules/lerna/lib/GitUtilities.js
-index 94f97a1..0ffbd66 100644
+index 94f97a1..dfc2371 100644
 --- a/node_modules/lerna/lib/GitUtilities.js
 +++ b/node_modules/lerna/lib/GitUtilities.js
-@@ -180,10 +180,18 @@ var GitUtilities = function () {
+@@ -180,10 +180,19 @@ var GitUtilities = function () {
        var formattedLocation = _path2.default.relative(opts.cwd, location).replace(/\\/g, "/");
        _npmlog2.default.silly("diffSinceIn", since, formattedLocation);
  
 +
++      debugger;
 +      // *************************************  bochen; bchen ********************************************************
 +      // git diff --name-only  $(git describe --tag --abbrev=0) -- pakcages/button
 +      // packages/button/CHANGELOG.md
@@ -58,7 +83,7 @@ index 94f97a1..0ffbd66 100644
    }, {
      key: "getWorkspaceRoot",
 diff --git a/node_modules/lerna/lib/commands/PublishCommand.js b/node_modules/lerna/lib/commands/PublishCommand.js
-index 881db40..5417cf1 100644
+index 881db40..bf070f9 100644
 --- a/node_modules/lerna/lib/commands/PublishCommand.js
 +++ b/node_modules/lerna/lib/commands/PublishCommand.js
 @@ -214,7 +214,13 @@ var builder = exports.builder = {
@@ -76,7 +101,15 @@ index 881db40..5417cf1 100644
  };
  
  var PublishCommand = function (_Command) {
-@@ -509,6 +515,10 @@ var PublishCommand = function (_Command) {
+@@ -444,6 +450,7 @@ var PublishCommand = function (_Command) {
+         if (independentVersions) {
+           // Independent Conventional-Commits Mode
+           var _versions2 = {};
++          // $argv2 is the real functor
+           this.recommendVersions(this.updates, _ConventionalCommitUtilities2.default.recommendIndependentVersion, function (versionBump) {
+             _versions2[versionBump.pkg.name] = versionBump.recommendedVersion;
+           });
+@@ -509,6 +516,10 @@ var PublishCommand = function (_Command) {
            location: update.package.location
          };
  
