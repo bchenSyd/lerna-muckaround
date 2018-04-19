@@ -121,10 +121,10 @@ index 881db40..bf070f9 100644
          callback({ pkg, recommendedVersion });
        });
 diff --git a/node_modules/lerna/lib/UpdatedPackagesCollector.js b/node_modules/lerna/lib/UpdatedPackagesCollector.js
-index 9380e58..bae4439 100644
+index 9380e58..e8b13b2 100644
 --- a/node_modules/lerna/lib/UpdatedPackagesCollector.js
 +++ b/node_modules/lerna/lib/UpdatedPackagesCollector.js
-@@ -131,11 +131,16 @@ var UpdatedPackagesCollector = function () {
+@@ -131,11 +131,17 @@ var UpdatedPackagesCollector = function () {
            if (forced.has(pkg.name)) {
              return true;
            }
@@ -136,6 +136,7 @@ index 9380e58..bae4439 100644
 +      //#####################################################
 +            // we use ` git diff --name-only $(git describe --tag --abbrev=0)  -- packages/xxx ` 
 +            // to get all updated packages
++            debugger;
              return updatedPackages;
 +      //#####################################################
 +      
