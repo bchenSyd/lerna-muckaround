@@ -9,7 +9,7 @@
     "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
     "lerna:bootstrap": "lerna bootstrap --hoist",
-    "publish": "lerna publish --yes --conventional-commits",
+    "publish": "lerna publish --yes --conventional-commits -m 'chore(release): publish [ci skip] ***NO_CI*** %v'   ",
     "prepublish" :"for p in packages/*; do cp .npmrc $p/; done",
     "detect-changes": "lerna updated",
     "test": "cd packages/button && npm pack",
