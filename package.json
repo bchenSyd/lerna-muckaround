@@ -9,7 +9,7 @@
     "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
     "lerna:bootstrap": "lerna bootstrap --hoist",
-    "publish": "lerna publish --yes --conventional-commits --skip-npm",
+    "publish": "lerna publish --yes --conventional-commits",
     "prepublish" :"for p in packages/*; do cp .npmrc $p/; done",
     "detect-changes": "lerna updated",
     "test": "cd packages/button && npm pack",
@@ -17,7 +17,7 @@
     "build": "rollup -c --gel-component",
     "lint": "eslint packages",
     "gitSemverTags": "git-semver-tags",
-    "debug-lerna": "node --inspect-brk node_modules/lerna/bin/lerna.js publish --yes --conventional-commits  --skip-npm",
+    "debug-lerna": "node --inspect-brk node_modules/lerna/bin/lerna.js publish --yes --conventional-commits",
     "debug-bump": "lerna publish --yes --conventional-commits --skip-git --skip-npm --debug-bump"
   },
   "author": "",
