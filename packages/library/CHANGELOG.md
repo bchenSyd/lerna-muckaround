@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.70.3"></a>
+## 0.70.3 (2018-04-23)
+
+
+### Features
+
+* **library:** add gel-library ([093f695](https://github.com/bochen2014/lerna-muckaround/commit/093f695))
+
+
+
+
 <a name="0.68.8"></a>
 ## [0.68.8](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/library@0.68.6...@lernatest/library@0.68.8) (2018-04-21)
 

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.70.3"></a>
+## 0.70.3 (2018-04-23)
+
+
+### Bug Fixes
+
+* **themes:** bugfix ([c1853ad](https://github.com/bochen2014/lerna-muckaround/commit/c1853ad))
+
+
+### Features
+
+* update font size ([d99f24f](https://github.com/bochen2014/lerna-muckaround/commit/d99f24f))
+* **library:** add gel-library ([093f695](https://github.com/bochen2014/lerna-muckaround/commit/093f695))
+* **themes:** a minor-level change on themes ([f27c5ab](https://github.com/bochen2014/lerna-muckaround/commit/f27c5ab))
+* **themes:** BREAKING CHANGE change primary color ([931a175](https://github.com/bochen2014/lerna-muckaround/commit/931a175))
+
+
+### Performance Improvements
+
+* **themes:** update themes ([fbc4bdd](https://github.com/bochen2014/lerna-muckaround/commit/fbc4bdd))
+
+
+
+
 <a name="0.72.3"></a>
 ## [0.72.3](https://github.com/bochen2014/lerna-muckaround/compare/@lernatest/gel-themes@0.72.1...@lernatest/gel-themes@0.72.3) (2018-04-21)
 
