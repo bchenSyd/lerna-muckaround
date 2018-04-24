@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/library",
-  "version": "0.70.12",
+  "version": "0.70.13",
   "description": "  ",
   "main": "dist/index.js",
   "scripts": {

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.70.13"></a>
+## [0.70.13](https://github.com/bochen2014/lerna-muckaround/compare/v0.70.12...v0.70.13) (2018-04-24)
+
+**Note:** Version bump only for package @lernatest/library
+
+
+
+
+
 <a name="0.70.12"></a>
 ## [0.70.12](https://github.com/bochen2014/lerna-muckaround/compare/v0.70.11...v0.70.12) (2018-04-24)
 
