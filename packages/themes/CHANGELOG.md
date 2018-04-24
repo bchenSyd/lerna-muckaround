@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.70.22"></a>
+## [0.70.22](https://github.com/bochen2014/lerna-muckaround/compare/v0.70.21...v0.70.22) (2018-04-24)
+
+**Note:** Version bump only for package @lernatest/gel-themes
+
+
+
+
+
 <a name="0.70.21"></a>
 ## [0.70.21](https://github.com/bochen2014/lerna-muckaround/compare/v0.70.20...v0.70.21) (2018-04-24)
 
