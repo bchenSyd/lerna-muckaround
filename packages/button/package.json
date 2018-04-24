@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish gel-button *******************; node ../../utils/compile -c button",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "0.70.15"
   },
   "author": "",
   "license": "ISC",
