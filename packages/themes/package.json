@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "echo ****************** prepublish gel-themes *******************; node ../../utils/compile -c themes",
+    "prepublish": "echo ****************** prepublish gel-themes *******************; node ../../utils/compile -c themes"
   },
   "author": "",
   "license": "ISC"
