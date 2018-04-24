@@ -1,5 +1,10 @@
 {
   "lerna": "3.0.0-beta.17",
+  "command": {
+    "init": {
+      "exact": true
+    }
+  },
   "packages": [
     "packages/*"
   ],
