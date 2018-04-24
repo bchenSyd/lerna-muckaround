@@ -8,6 +8,6 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.70.23",
+  "version": "0.70.24",
   "registry": "http://localhost:4873"
 }
