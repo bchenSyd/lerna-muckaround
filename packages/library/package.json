@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@lernatest/gel-button": "0.70.9",
-    "@lernatest/gel-themes": "0.70.8"
+    "@lernatest/gel-themes": "0.70.9"
   }
 }
