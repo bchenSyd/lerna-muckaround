@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/gel-button",
-  "version": "0.70.14",
+  "version": "0.70.15",
   "description": "  ",
   "main": "dist/index.js",
   "scripts": {
