@@ -14,10 +14,12 @@ const theme = ThemeProvider.getTheme();
 const Button = styled.button`
   color: ${theme.primaryColor};
 `
-// test internal module
+// test internal module 
 const name = getName();
 
 
 const FancyButton = () => <button >fancy button ${name}</button>
 
 export default FancyButton;
+
+// some change
