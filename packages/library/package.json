@@ -4,7 +4,7 @@
   "description": "  ",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "node ../../utils/compile -c library",
+    "prepublish": "echo ****************** prepublish library *******************; node ../../utils/compile -c library",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
