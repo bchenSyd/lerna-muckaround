@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish gel-button *******************; node ../../utils/compile -c button",
-    "test": "1.71.0"
+    "test": "1.0.0"
   },
   "author": "",
   "license": "ISC",
