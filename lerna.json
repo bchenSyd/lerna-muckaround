@@ -1,13 +1,16 @@
 {
   "lerna": "3.0.0-beta.17",
-  "command": {
-    "init": {
-      "exact": true
-    }
-  },
   "packages": [
     "packages/*"
   ],
-  "version": "0.70.25",
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "yes": true,
+      "message": "chore(release): **NO_CI** [skip_ci]  publish %s"
+    }
+  },
+  "version": "0.70.26",
   "registry": "http://localhost:4873"
 }
