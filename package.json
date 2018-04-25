@@ -9,11 +9,11 @@
     "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
     "lerna:bootstrap": "lerna bootstrap --hoist >/dev/null 2>&1",
-    "//1":"can't use &>/dev/null because npm use /bin/sh, not bash",
+    "//1": "can't use &>/dev/null because npm use /bin/sh, not bash",
     "publish-1": "lerna updated > /dev/null 2>&1; if [ $? -eq 0 ]; then  npm run lerna:publish ; else echo No changes to publish ; fi",
-    "//":"end exit code is the second statement, not lerna udated. you have to use `;` , not `&` otherwise both get executed ",
-    "publish":"lerna updated; if [ $? -eq 0 ]; then npm run lerna:publish; fi",
-    "lerna:publish":"lerna publish --yes --conventional-commits -m 'chore(release): publish [ci skip] ***NO_CI*** %v'  --exact --force-publish=* ",
+    "//": "end exit code is the second statement, not lerna udated. you have to use `;` , not `&` otherwise both get executed ",
+    "publish": "lerna updated; if [ $? -eq 0 ]; then npm run lerna:publish; fi",
+    "lerna:publish": "lerna publish --yes --conventional-commits -m 'chore(release): publish [ci skip] ***NO_CI*** %v'  --exact --force-publish=* ",
     "prepublish": "for p in packages/*; do cp .npmrc $p/; done",
     "detect-changes": "lerna updated",
     "test": "cd packages/button && npm pack",
@@ -35,7 +35,6 @@
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.18.2",
     "eslint-plugin-react": "^7.7.0",
-    "lerna": "^3.0.0-beta.17",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
     "rollup": "^0.57.0",
@@ -45,5 +44,6 @@
     "rollup-plugin-url": "^1.3.0",
     "style-component": "^0.0.1",
     "yargs": "^11.0.0"
-  }
+  },
+  "dependencies": {}
 }
