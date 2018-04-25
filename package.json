@@ -13,7 +13,7 @@
     "publish-1": "lerna updated > /dev/null 2>&1; if [ $? -eq 0 ]; then  npm run lerna:publish ; else echo No changes to publish ; fi",
     "//": "end exit code is the second statement, not lerna udated. you have to use `;` , not `&` otherwise both get executed ",
     "publish-2": "lerna updated; if [ $? -eq 0 ]; then npm run lerna:publish; fi",
-    "lerna:publish": "lerna publish --exact --force-publish=* ",
+    "lerna:publish": "lerna publish",
     "publish":"lerna publish",
     "prepublish": "for p in packages/*; do cp .npmrc $p/; done",
     "detect-changes": "lerna updated",
