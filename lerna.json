@@ -11,6 +11,11 @@
       "message": "chore(release): **NO_CI** [skip_ci]  publish %s"
     }
   },
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
   "version": "0.70.26",
   "registry": "http://localhost:4873"
 }
