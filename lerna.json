@@ -19,6 +19,5 @@
     "**/__tests__/**",
     "**/*.md"
   ],
-  "version": "1.0.3",
-  "registry": "http://localhost:4873"
+  "version": "1.0.3"
 }
