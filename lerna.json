@@ -5,7 +5,7 @@
   ],
   "command": {
     "publish": {
-      "allowBranch": "master",
+      "allowBranch": ["master", "develop"],
       "conventionalCommits": true,
       "yes": true,
       "message": "chore(release): **NO_CI** [skip_ci]  publish %s"
@@ -17,5 +17,5 @@
     "**/*.md"
   ],
   "version": "1.0.0",
-  "registry": "http://localhost:5873"
+  "registry": "http://localhost:4873"
 }
