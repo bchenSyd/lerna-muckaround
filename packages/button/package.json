@@ -1,7 +1,7 @@
 {
   "name": "@lernatest/gel-button",
   "version": "1.0.2",
-  "description": " dev A ",
+  "description": " dev A, deve C ",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish gel-button *******************; node ../../utils/compile -c button",
