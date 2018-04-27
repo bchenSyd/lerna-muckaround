@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/bochen2014/lerna-muckaround/compare/v0.71.1...v1.0.0) (2018-04-27)
+
+
+### Features
+
+* **test:**  blabla ([254659f](https://github.com/bochen2014/lerna-muckaround/commit/254659f))
+
+
+### BREAKING CHANGES
+
+* **test:** some breaking change.
+
+
+
+
+
 <a name="0.71.1"></a>
 ## [0.71.1](https://github.com/bochen2014/lerna-muckaround/compare/v0.71.0...v0.71.1) (2018-04-25)
 
