@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/bochen2014/lerna-muckaround/compare/v1.0.7...v1.0.8) (2018-04-27)
+
+**Note:** Version bump only for package @lernatest/gel-button
+
+
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/bochen2014/lerna-muckaround/compare/v1.0.6...v1.0.7) (2018-04-27)
 
