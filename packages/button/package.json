@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/gel-button",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "new sprint 1, sprint2",
   "main": "dist/index.js",
   "scripts": {
