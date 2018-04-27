@@ -5,7 +5,10 @@
   ],
   "command": {
     "publish": {
-      "allowBranch": ["master", "develop"],
+      "allowBranch": [
+        "master",
+        "develop"
+      ],
       "conventionalCommits": true,
       "yes": true,
       "message": "chore(release): **NO_CI** [skip_ci]  publish %s"
@@ -16,6 +19,6 @@
     "**/__tests__/**",
     "**/*.md"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "registry": "http://localhost:4873"
 }
