@@ -1,7 +1,7 @@
 {
   "name": "@lernatest/gel-themes",
   "version": "0.70.25",
-  "description": "",
+  "description": "develop B",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish gel-themes *******************; node ../../utils/compile -c themes"
