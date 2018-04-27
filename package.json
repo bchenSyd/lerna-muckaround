@@ -15,7 +15,7 @@
     "publish-2": "lerna updated; if [ $? -eq 0 ]; then npm run lerna:publish; fi",
     "lerna:publish": "lerna publish",
     "publish":"lerna publish",
-    "prepublish": "for p in packages/*; do cp .npmrc $p/; done",
+    "prepublish": "cp .npmrc-westpac .npmrc;for p in packages/*; do cp .npmrc $p/; done",
     "detect-changes": "lerna updated",
     "test": "cd packages/button && npm pack",
     "build:button": "rollup -c --gel-component=button",

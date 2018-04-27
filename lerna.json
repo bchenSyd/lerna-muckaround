@@ -17,5 +17,5 @@
     "**/*.md"
   ],
   "version": "1.0.0",
-  "registry": "http://localhost:4873"
+  "registry": "http://localhost:5873"
 }
