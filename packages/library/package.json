@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/library",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "  ",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lernatest/gel-button": "^1.0.3",
+    "@lernatest/gel-button": "^1.0.4",
     "@lernatest/gel-themes": "^1.0.2"
   }
 }
