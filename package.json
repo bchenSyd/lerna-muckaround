@@ -8,7 +8,7 @@
   "scripts": {
     "postinstall": "npm run lerna:bootstrap",
     "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
-    "lerna:bootstrap": "lerna bootstrap --hoist >/dev/null 2>&1",
+    "lerna:bootstrap": "lerna bootstrap --hoist --ci ",
     "//1": "can't use &>/dev/null because npm use /bin/sh, not bash",
     "publish-1": "lerna updated > /dev/null 2>&1; if [ $? -eq 0 ]; then  npm run lerna:publish ; else echo No changes to publish ; fi",
     "//": "end exit code is the second statement, not lerna udated. you have to use `;` , not `&` otherwise both get executed ",
