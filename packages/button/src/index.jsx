@@ -1,26 +1,31 @@
-import React from 'react';
-import ThemeProvider from '@lernatest/gel-themes';
-import styled from 'styled-components';
-import getName from './utils/getName';
+import React from "react";
+import ThemeProvider from "@lernatest/gel-themes";
+import styled from "styled-components";
+import getName from "./utils/getName";
 
 // test object-rest-spread is supported (a babel stage3 feature, not es6/ES2015 standard)
 const { a, ...rest } = { a: 1, b: 2, c: 3 };
-// test styled-component
-const Wrapper = styled.div`
-  height: 200px;
-`;
+
 // test internal package dependency
 const theme = ThemeProvider.getTheme();
-const Button = styled.button`
-  color: ${theme.primaryColor};
-`
-// test internal module 
+const Button = ({ text, ...props }) => (
+  <div {...props}>
+    <div>this is a button</div>
+    <div>{text}</div>
+  </div>
+);
+
+// test internal module
 const name = getName();
 
-
-const FancyButton = () => <button >fancy button ${name}</button>
+// How to understand:
+// Consider carefully whether to wrap your own components in a styled component, when it isn't necessary.
+// You will disable the automatic whitelisting of props, and reverse the recommended order of styled components
+// and structural components.
+const FancyButton =  styled(Button)`
+  color: ${theme.primaryColor};
+  height: ${props => props.height}; /* here the height prop will be passed down to Button, which blindly passing all unknow props to DOM element,
+                                       this is how FontAwesome behaves. see: https://github.com/styled-components/styled-components/issues/305#issuecomment-266197867 */
+`;
 
 export default FancyButton;
-
-// some change 1122;
-// try lerna --exact 11
