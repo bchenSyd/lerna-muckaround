@@ -1,0 +1,4 @@
+# eslint by default only ignore the root node_modules/** folder
+**/node_modules/**
+node-gyp/*
+**/dist

@@ -7,5 +7,8 @@ module.exports = {
     jest: true
   },
   extends: ["airbnb", "plugin:prettier/recommended"],
-  plugins: ["react"]
+  plugins: ["react"],
+  rules:{
+    "react/jsx-filename-extension": "off",
+  }
 };

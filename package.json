@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "postinstall": "npm run lerna:bootstrap",
-    "clean": "lerna clean --yes &&find packages -name 'dist' |xargs rm -rf ",
-    "lerna:bootstrap": "lerna bootstrap --hoist --ci ",
+    "clean": "find . -name package-lock.json -o -name node_modules -o -name dist | xargs rm -rf ",
+    "lerna:bootstrap": "lerna bootstrap --hoist ",
     "//1": "can't use &>/dev/null because npm use /bin/sh, not bash",
     "publish-1": "lerna updated > /dev/null 2>&1; if [ $? -eq 0 ]; then  npm run lerna:publish ; else echo No changes to publish ; fi",
     "//": "end exit code is the second statement, not lerna udated. you have to use `;` , not `&` otherwise both get executed ",
@@ -24,7 +24,7 @@
     "test": "cd packages/button && npm pack",
     "build:button": "rollup -c --gel-component=button",
     "build": "rollup -c --gel-component",
-    "lint": "eslint packages",
+    "lint": "eslint --ext .js,.jsx --fix packages",
     "gitSemverTags": "git-semver-tags",
     "debug-lerna": "node --inspect-brk node_modules/.bin/lerna publish --skip-git --skip-npm",
     "debug-bump": "lerna publish --skip-git --skip-npm --debug-bump"

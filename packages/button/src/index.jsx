@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars, react/prop-types */
 import React from "react";
 import ThemeProvider from "@lernatest/gel-themes";
 import styled from "styled-components";
@@ -22,9 +23,10 @@ const name = getName();
 // Consider carefully whether to wrap your own components in a styled component, when it isn't necessary.
 // You will disable the automatic whitelisting of props, and reverse the recommended order of styled components
 // and structural components.
-const FancyButton =  styled(Button)`
+const FancyButton = styled(Button)`
   color: ${theme.primaryColor};
-  height: ${props => props.height}; /* here the height prop will be passed down to Button, which blindly passing all unknow props to DOM element,
+  height: ${props =>
+    props.height}; /* here the height prop will be passed down to Button, which blindly passing all unknow props to DOM element,
                                        this is how FontAwesome behaves. see: https://github.com/styled-components/styled-components/issues/305#issuecomment-266197867 */
 `;
 
