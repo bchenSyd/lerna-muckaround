@@ -20,8 +20,12 @@ export default {
     plugins:[
         babel(),
     ],
-    output:{
+    output:[{
         file: `./packages/${component}/${pkg.main}`,
         format:'cjs'
-    }
+    },
+    {
+        file: `./packages/${component}/${pkg.module}`,
+        format:'es'
+    }]
 };
