@@ -1,13 +1,11 @@
 {
-  "name": "@lernatest/gel-button",
+  "name": "@lernatest/gel-x-iframe",
   "version": "1.0.9",
-  "description": "sprint 6, next QA release, more",
   "main": "dist/index.js",
   "jsnext:main":"dist/index.es.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "prepublish": "echo ****************** prepublish gel-button *******************; node ../../utils/compile -c button",
-    "test": "1.0.0"
+    "prepublish": "node ../../utils/compile -c iframe"
   },
   "author": "",
   "license": "ISC",

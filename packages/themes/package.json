@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "develop B",
   "main": "dist/index.js",
-  "jsnext:main":"dist/index.js",
-  "module": "dist/index.js",
+  "jsnext:main":"dist/index.es.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish gel-themes *******************; node ../../utils/compile -c themes"
   },
