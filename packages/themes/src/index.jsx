@@ -8,6 +8,4 @@ const themeProvider = {
 
 // update themes
 
-export default themeProvider;
-
-// need a bump
+export { themeProvider };
