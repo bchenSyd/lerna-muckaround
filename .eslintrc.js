@@ -6,6 +6,7 @@ module.exports = {
     mocha: true,
     jest: true
   },
+  // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
   extends: ["airbnb", "plugin:prettier/recommended"],
   plugins: ["react"],
   rules:{
