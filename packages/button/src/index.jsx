@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars, react/prop-types */
 import React from "react";
-import ThemeProvider from "@lernatest/gel-themes";
+import { ThemeProvider } from "@lernatest/gel-themes";
 import styled from "styled-components";
 import getName from "./utils/getName";
+import ExtendedExample from "./component";
 
 // test object-rest-spread is supported (a babel stage3 feature, not es6/ES2015 standard)
 const { a, ...rest } = { a: 1, b: 2, c: 3 };
@@ -26,8 +27,10 @@ const name = getName();
 const FancyButton = styled(Button)`
   color: ${theme.primaryColor};
   height: ${props =>
-    props.height}; /* here the height prop will be passed down to Button, which blindly passing all unknow props to DOM element,
-                                       this is how FontAwesome behaves. see: https://github.com/styled-components/styled-components/issues/305#issuecomment-266197867 */
+    props.height}; /* here if we do <FancyButton height='200px' />, the height prop will be passed down to Button, 
+    // this is the same as how FontAwesome behaves (passing all unkown props to children)
+    // see: https://github.com/styled-components/styled-components/issues/305#issuecomment-266197867 */
 `;
 
 export default FancyButton;
+export { ExtendedExample };
