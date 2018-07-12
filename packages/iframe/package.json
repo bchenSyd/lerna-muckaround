@@ -1,7 +1,7 @@
 {
   "name": "lerna-test-gel-x-iframe",
   "version": "1.1.6",
-  "description": "",
+  "description": "bump",
   "main": "dist/iframe.js",
   "jsnext:main": "dist/iframe.es.js",
   "module": "dist/iframe.es.js",
