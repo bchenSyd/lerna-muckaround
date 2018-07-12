@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars, react/prop-types */
 import React from "react";
-import { ThemeProvider } from "@lernatest/gel-themes";
+import { ThemeProvider } from "lerna-test-gel-themes";
 import styled from "styled-components";
 import getName from "./utils/getName";
 import ExtendedExample from "./component";
