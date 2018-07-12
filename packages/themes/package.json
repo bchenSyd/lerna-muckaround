@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/gel-themes",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "develop B",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es.js",
@@ -10,5 +10,5 @@
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "3ad3f31d63e986ad684df250bf77068322c477e7"
+  "gitHead": "660d55a5ddd65ac07bf4fc6df6419883482e9283"
 }
