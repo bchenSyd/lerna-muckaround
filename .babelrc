@@ -1,11 +1,15 @@
 {
-    "presets": [
-        ["env",
-            {
-                "modules": false
-            }
-        ],
-        "react"
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
     ],
-    "plugins": ["external-helpers", "transform-object-rest-spread"]
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ]
 }
