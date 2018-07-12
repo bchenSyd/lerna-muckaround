@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/bochen2014/lerna-muckaround/compare/v1.0.9...v1.1.0) (2018-07-12)
+
+
+### Features
+
+* **eslint:** eslint config setup ([a036cc4](https://github.com/bochen2014/lerna-muckaround/commit/a036cc4))
+
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/bochen2014/lerna-muckaround/compare/v1.0.8...v1.0.9) (2018-04-27)
 

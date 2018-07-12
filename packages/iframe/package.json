@@ -1,6 +1,6 @@
 {
   "name": "@lernatest/gel-x-iframe",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/iframe.js",
   "jsnext:main": "dist/iframe.es.js",
@@ -12,10 +12,10 @@
     "prepublish": "echo ****************** prepublish iframe *******************&& node ../../utils/compile -c iframe"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
+    "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
-    "styled-components": "^3.3.3",
-    "lodash": "^4.17.5"
+    "react": "^16.2.0",
+    "styled-components": "^3.3.3"
   },
   "author": "",
   "license": "ISC"

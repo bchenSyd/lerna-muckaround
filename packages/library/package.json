@@ -1,9 +1,9 @@
 {
   "name": "@lernatest/library",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "  ",
   "main": "dist/index.js",
-  "jsnext:main":"dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "scripts": {
     "prepublish": "echo ****************** prepublish library *******************&& node ../../utils/compile -c library",
@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lernatest/gel-button": "^1.0.9",
-    "@lernatest/gel-themes": "^1.0.2",
-    "@lernatest/gel-x-iframe": "^1.0.0"
+    "@lernatest/gel-button": "^1.1.0",
+    "@lernatest/gel-themes": "^1.1.0",
+    "@lernatest/gel-x-iframe": "^1.1.0"
   }
 }
