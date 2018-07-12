@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/bochen2014/lerna-muckaround/compare/v1.1.3...v1.1.4) (2018-07-12)
+
+**Note:** Version bump only for package lerna-test-bochen
+
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/bochen2014/lerna-muckaround/compare/v1.1.2...v1.1.3) (2018-07-12)
 
