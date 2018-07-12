@@ -1,4 +1,4 @@
-const themeProvider = {
+const ThemeProvider = {
   getTheme: () => ({
     primaryColor: "red",
     fontSize: 11,
@@ -8,4 +8,4 @@ const themeProvider = {
 
 // update themes
 
-export { themeProvider };
+export { ThemeProvider };
