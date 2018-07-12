@@ -1,6 +1,6 @@
 {
   "name": "lerna-test-gel-button",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "update",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es.js",
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna-test-gel-themes": "^1.2.0",
+    "lerna-test-gel-themes": "^1.2.1",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
     "styled-components": "^3.3.3"

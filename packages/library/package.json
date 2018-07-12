@@ -1,6 +1,6 @@
 {
   "name": "lerna-test-library",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "  ",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es.js",
@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna-test-gel-button": "^1.2.0",
-    "lerna-test-gel-themes": "^1.2.0",
+    "lerna-test-gel-button": "^1.2.1",
+    "lerna-test-gel-themes": "^1.2.1",
     "lerna-test-gel-x-iframe": "^1.2.0"
   },
   "gitHead": "b96b5b5124b38ddd05e535bd28fba4cd93a70137"
