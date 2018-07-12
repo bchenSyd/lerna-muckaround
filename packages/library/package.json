@@ -1,6 +1,6 @@
 {
-  "name": "@lernatest/library",
-  "version": "1.1.4",
+  "name": "@bochen2014/library",
+  "version": "1.1.5",
   "description": "  ",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es.js",
@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lernatest/gel-button": "^1.1.4",
-    "@lernatest/gel-themes": "^1.1.4",
-    "@lernatest/gel-x-iframe": "^1.1.4"
+    "@bochen2014/gel-button": "^1.1.5",
+    "@bochen2014/gel-themes": "^1.1.5",
+    "@bochen2014/gel-x-iframe": "^1.1.5"
   },
-  "gitHead": "6a0ee19e3ed9b703e5a10b9dce7f9cf6a0aea540"
+  "gitHead": "d625e8d922bf5827a77fd13d534d95727535c551"
 }

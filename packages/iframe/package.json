@@ -1,6 +1,6 @@
 {
-  "name": "@lernatest/gel-x-iframe",
-  "version": "1.1.4",
+  "name": "@bochen2014/gel-x-iframe",
+  "version": "1.1.5",
   "description": "",
   "main": "dist/iframe.js",
   "jsnext:main": "dist/iframe.es.js",
@@ -19,5 +19,5 @@
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "6a0ee19e3ed9b703e5a10b9dce7f9cf6a0aea540"
+  "gitHead": "d625e8d922bf5827a77fd13d534d95727535c551"
 }
