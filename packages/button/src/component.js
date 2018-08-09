@@ -22,7 +22,8 @@ const Exception = styled.a.attrs({ target: "_blank" })``;
 // I have not found in documentation that attrs should be used with extend
 // only exception being :
 
-// you can't do YourComponent.attrs({prop: value}) as once a Component is defined and being used, it's very dangerouse to modify it;
+// you can't do YourComponent.attrs({prop: value}) as once a Component is defined and being used, it's very dangerouse to modify it
+// however, you can do styled(YourComponent).attrs({prop:'value})`` , or YourComponent.extend.attrs({})``
 // that's why `.extend` comes to play,
 // see https://github.com/styled-components/styled-components/issues/1250#issuecomment-337181485
 
