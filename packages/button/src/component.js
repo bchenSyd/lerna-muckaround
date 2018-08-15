@@ -8,13 +8,18 @@ export const MyComponent = styled(({ className, name, ...rest }) => (
   font-size: 2.5em;
 `;
 
+const extendedComponent = MyComponent.extend`
+  color:'must be css prop ONLY';
+`
+
 // extend can only update `className`,
 // attrs can update any props
 // note: all extends/attrs rely on component being wrapped passing on props (className and ...restProps)
 // down to leaf DOM elements )
 const Decorated = MyComponent.extend.attrs({
-  type: "password" // ...resProps change;
+  type: "password", // ...resProps change;
 })``; //  you need the two backticks at the end even if you don't want to override the styles; or you can use `recompose`
+
 
 const Exception = styled.a.attrs({ target: "_blank" })``;
 
