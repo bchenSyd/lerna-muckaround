@@ -15,7 +15,8 @@
     "lerna-test-gel-themes": "^1.2.1",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
-    "styled-components": "^3.3.3"
+    "styled-components": "^3.3.3",
+    "grid-styled":"^5.0.2"
   },
   "gitHead": "b96b5b5124b38ddd05e535bd28fba4cd93a70137"
 }
