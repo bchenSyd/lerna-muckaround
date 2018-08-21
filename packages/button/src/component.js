@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Box } from 'grid-styled';
 
 // white listing props passed down to children
 export const MyComponent = styled(({ className, name, ...rest }) => (
@@ -14,7 +15,7 @@ const extendedComponent = MyComponent.extend`
 
 
 // live coral example
-const HighlightText = styled(Text).attrs({ size: 2 })`
+const HighlightText = styled(Box).attrs({ size: 2 })`
   ${({ colored, theme }) =>
     colored &&
     css`
