@@ -22,7 +22,11 @@ const MyComponent = styled("div")`
       &:hover {
         background-color: ${bgColor};
       }
-    `} ${({ bgColor }) => bgColor && "&:hover{ border: 1px solid grey}"};
+
+    `} 
+
+  ${/* use string doesn't look good; better to use `css` to wrap them;   */}
+  ${({ bgColor }) => bgColor && "&:hover{ border: 1px solid grey}"};
 `;
 
 class App extends Component {

@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 
 const IFrame = styled.iframe`
   width: 100%;
-  ${props =>
-    props.styles &&
-    css`
-      ${props.styles};
-    `};
+  ${props => props.styles};
 `;
 
 export class GelXIframe extends Component {
@@ -18,24 +14,24 @@ export class GelXIframe extends Component {
     setIFrameRef: PropTypes.func,
     onReceiveMessage: PropTypes.func,
     url: PropTypes.string.isRequired,
-    styles: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    styles: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
   };
   static defaultProps = {
-    sandbox: 'allow-forms allow-scripts ',
+    sandbox: "allow-forms allow-scripts ",
     displayLoader: <div />,
     setIFrameRef: undefined,
     onReceiveMessage: undefined,
-    styles: undefined,
+    styles: undefined
   };
 
   state = {
-    isFrameLoaded: false,
+    isFrameLoaded: false
   };
 
   componentDidMount() {
     const { onReceiveMessage } = this.props;
     if (onReceiveMessage) {
-      this.messageEvent = this.addEventListener('message', onReceiveMessage);
+      this.messageEvent = this.addEventListener("message", onReceiveMessage);
     }
   }
 
@@ -47,7 +43,7 @@ export class GelXIframe extends Component {
 
   onIFrameLoaded = () => {
     this.setState({
-      isFrameLoaded: true,
+      isFrameLoaded: true
     });
   };
 
@@ -58,7 +54,7 @@ export class GelXIframe extends Component {
     return {
       remove: () => {
         window.removeEventListener(message, handler);
-      },
+      }
     };
   };
 

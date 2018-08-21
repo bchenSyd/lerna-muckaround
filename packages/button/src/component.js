@@ -12,6 +12,23 @@ const extendedComponent = MyComponent.extend`
   color:'must be css prop ONLY';
 `
 
+
+// live coral example
+const HighlightText = styled(Text).attrs({ size: 2 })`
+  ${({ colored, theme }) =>
+    colored &&
+    css`
+      color: ${theme.color.heading};
+    `};
+  margin: 0;
+  ${({ bold }) =>
+    bold &&
+    css`
+      font-weight: bold;  /* we can replace css tilt blabla tilt with 'blalba' but we then lose the opportunity of validation */
+    `};
+`;
+
+
 // extend can only update `className`,
 // attrs can update any props
 // note: all extends/attrs rely on component being wrapped passing on props (className and ...restProps)
