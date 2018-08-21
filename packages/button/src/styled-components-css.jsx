@@ -9,6 +9,11 @@ const MyComponent = styled("div")`
     color: red;
   }
 
+  &::before {
+    content: '◀';
+    margin: 0 10px;
+  }
+
   ${({ bgColor }) =>
     bgColor &&
     // 1. if we were not using ${bgColor}, we could just put it under a normal string; see example below

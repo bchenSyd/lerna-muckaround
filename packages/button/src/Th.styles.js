@@ -43,6 +43,12 @@ export const StyledTh = styled.th.attrs({
   }
 
 
+  &::before {
+    content: '◀';
+    margin: 0 10px;
+  }
+
+  
   ${StyledCaption} + ${StyledThead} > ${StyledTr}:first-child > &,
     ${StyledColgroup} + ${StyledThead} > ${StyledTr}:first-child > &,
     ${StyledThead}:first-child > ${StyledTr}:first-child > & {
