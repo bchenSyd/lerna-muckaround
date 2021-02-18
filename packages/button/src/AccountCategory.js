@@ -1,6 +1,5 @@
 mport styled, { css } from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { Text } from '@wdpui/react-gel';
 import { accountCategoryType } from '../../../prop-types';
 
 const Wrapper = styled.div`
